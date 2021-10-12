@@ -2,14 +2,14 @@ import PropTypes from "prop-types";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 // import { connect } from "react-redux";
-import * as actions from "../../redux/actions";
+import * as operations from "../../redux/operations";
 import css from "./ContactForm.module.css";
 
 export default function ContactForm() {
   const [name, setName] = useState("");
   const [number, setNumber] = useState("");
   const dispatch = useDispatch();
-  const formSubmitHandler = (value) => dispatch(actions.addContacts(value));
+  const formSubmitHandler = (value) => dispatch(operations.addContacts(value));
 
   const handleChange = (e) => {
     const { name, value } = e.target;

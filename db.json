@@ -1,0 +1,44 @@
+{
+  "contacts": [
+    {
+      "id": "id-1",
+      "name": "Rosie Simpson",
+      "number": "459-12-56"
+    },
+    {
+      "id": "id-2",
+      "name": "Hermione Kline",
+      "number": "443-89-12"
+    },
+    {
+      "id": "id-3",
+      "name": "Eden Clements",
+      "number": "645-17-79"
+    },
+    {
+      "id": "id-4",
+      "name": "Annie Copeland",
+      "number": "227-91-26"
+    },
+    {
+      "id": "a3e8a0a1-7353-44cd-843b-7604fa810fb2",
+      "name": "asdasd",
+      "number": "227-91034"
+    },
+    {
+      "id": "6487d4e9-f946-4dbc-b578-2a023bebb45c",
+      "name": "asdasd",
+      "number": "227-91034"
+    },
+    {
+      "id": "01e44b8d-e63b-4e64-81e6-981a50574c3a",
+      "name": "asdasd",
+      "number": "227-91034"
+    },
+    {
+      "id": "995204a5-3a60-43d6-b9a3-9a9b11cba373",
+      "name": "Afanasiev Dmitriy",
+      "number": "227-91034"
+    }
+  ]
+}

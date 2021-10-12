@@ -1,12 +1,13 @@
 import PropTypes from "prop-types";
 // import { connect } from "react-redux";
 import { useDispatch } from "react-redux";
-import * as actions from "../../redux/actions";
+// import * as actions from "../../redux/actions";
+import { filterContacts } from "../../redux/operations";
 import css from "./Filter.module.css";
 
 export default function Filter() {
   const dispatch = useDispatch();
-  const getVisibleList = (value) => dispatch(actions.filterContacts(value));
+  const getVisibleList = (value) => dispatch(filterContacts(value));
   const filterList = (e) => {
     getVisibleList(e.target.value);
   };
