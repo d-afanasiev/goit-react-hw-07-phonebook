@@ -1,6 +1,5 @@
 import "./App.css";
 import PropTypes from "prop-types";
-// import { connect } from "react-redux";
 import ContactForm from "./components/ContactForm";
 import Filter from "./components/Filter";
 import ContactList from "./components/ContactList";
@@ -17,13 +16,6 @@ export default function App() {
     </div>
   );
 }
-
-// const mapStateToProps = (state) => ({
-//   contacts: state.contacts.items,
-//   filter: state.contacts.filter,
-// });
-
-// export default connect(mapStateToProps, null)(App);
 
 App.propTypes = {
   contacts: PropTypes.arrayOf(

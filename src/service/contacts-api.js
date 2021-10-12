@@ -9,15 +9,16 @@ export async function fetchContacts() {
 }
 
 export async function saveContact(value) {
-  console.log(value);
-  const { data } = await axios({
-    method: "post",
-    url: "/contacts",
-    data: {
-      id: uuidv4(),
-      name: value.name,
-      number: value.number,
-    },
+  const { data } = await axios.post("/contacts", {
+    id: uuidv4(),
+    name: value.name,
+    number: value.number,
   });
+  return data;
+}
+
+export async function deleteContact(value) {
+  const data = await axios.delete(`/contacts/${value.id}`);
+
   return data;
 }

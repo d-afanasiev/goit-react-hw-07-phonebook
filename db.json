@@ -1,11 +1,6 @@
 {
   "contacts": [
     {
-      "id": "id-1",
-      "name": "Rosie Simpson",
-      "number": "459-12-56"
-    },
-    {
       "id": "id-2",
       "name": "Hermione Kline",
       "number": "443-89-12"
@@ -21,23 +16,23 @@
       "number": "227-91-26"
     },
     {
-      "id": "a3e8a0a1-7353-44cd-843b-7604fa810fb2",
-      "name": "asdasd",
+      "id": "e06b23f0-473b-4f4a-b8d3-63cf8ee50363",
+      "name": "Дмитрий",
       "number": "227-91034"
     },
     {
-      "id": "6487d4e9-f946-4dbc-b578-2a023bebb45c",
-      "name": "asdasd",
+      "id": "08e2fc7e-b2b7-476d-b005-5b00e5caaecb",
+      "name": "Дмитрий",
       "number": "227-91034"
     },
     {
-      "id": "01e44b8d-e63b-4e64-81e6-981a50574c3a",
-      "name": "asdasd",
+      "id": "a2ce265e-7a68-4ff3-bc4a-b9681aadbaa0",
+      "name": "Дмитрий",
       "number": "227-91034"
     },
     {
-      "id": "995204a5-3a60-43d6-b9a3-9a9b11cba373",
-      "name": "Afanasiev Dmitriy",
+      "id": "83baef43-f60d-40fd-af33-3e8bdccc09fe",
+      "name": "sed",
       "number": "227-91034"
     }
   ]

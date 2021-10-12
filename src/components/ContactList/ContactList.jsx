@@ -1,9 +1,7 @@
 import PropTypes from "prop-types";
 import { useDispatch, useSelector } from "react-redux";
-// import { connect } from "react-redux";
-// import * as actions from "../../redux/actions";
 import { useEffect } from "react";
-import { fetchContacts } from "../../redux/operations";
+import { fetchContacts, deleteContacts } from "../../redux/operations";
 import css from "./ContactList.module.css";
 import { getContacts, getFilter } from "../../redux/selector";
 
@@ -14,19 +12,13 @@ export default function ContactList() {
   const dispatch = useDispatch();
   useEffect(() => dispatch(fetchContacts()), [dispatch]);
 
-  console.log(contacts);
-
   const visibleList = () => {
     const normalizeFilter = filter.toLowerCase();
-    console.log(contacts);
-    if (contacts) {
-      return contacts.filter((contact) =>
-        contact.name.toLowerCase().includes(normalizeFilter)
-      );
-    }
-    return;
+    return contacts.filter((contact) =>
+      contact.name.toLowerCase().includes(normalizeFilter)
+    );
   };
-  // const deleteContact = (value) => dispatch(fetchContacts.fetchContacts(value));
+  const deleteContact = (value) => dispatch(deleteContacts(value));
   return (
     <ul className={css.listContacts}>
       {visibleList() &&
@@ -36,7 +28,7 @@ export default function ContactList() {
             <button
               type="submit"
               className={css.button}
-              // onClick={() => deleteContact(contact)}
+              onClick={() => deleteContact(contact)}
             >
               Delete
             </button>
@@ -45,12 +37,6 @@ export default function ContactList() {
     </ul>
   );
 }
-
-// const mapDispatchToProps = (dispatch) => ({
-//   deleteContact: (value) => dispatch(actions.deleteContacts(value)),
-// });
-
-// export default connect(null, mapDispatchToProps)(ContactList);
 
 ContactList.propTypes = {
   getVisibleContacts: PropTypes.func,
