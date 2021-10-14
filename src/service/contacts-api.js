@@ -18,7 +18,7 @@ export async function saveContact(value) {
 }
 
 export async function deleteContact(value) {
-  const data = await axios.delete(`/contacts/${value.id}`);
+  await axios.delete(`/contacts/${value.id}`);
 
-  return data;
+  return value.id;
 }
