@@ -1,7 +1,8 @@
 import axios from "axios";
 import { v4 as uuidv4 } from "uuid";
 
-axios.defaults.baseURL = "http://localhost:3001";
+axios.defaults.baseURL =
+  "http://dafanasiev-goit-react-hw-07-phonebook.netlify.app";
 
 export async function fetchContacts() {
   const { data } = await axios.get("/contacts");
