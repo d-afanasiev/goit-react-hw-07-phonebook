@@ -1,11 +1,6 @@
 {
   "contacts": [
     {
-      "id": "id-2",
-      "name": "Hermione Kline",
-      "number": "443-89-12"
-    },
-    {
       "id": "id-3",
       "name": "Eden Clements",
       "number": "645-17-79"
@@ -26,7 +21,7 @@
       "number": "227-91034"
     },
     {
-      "id": "7930909a-32ae-4668-a174-7435b5933abf",
+      "id": "7fef8995-57a5-4856-99ac-a51f20501030",
       "name": "Дмитрий",
       "number": "227-91034"
     }
