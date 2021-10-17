@@ -12,7 +12,7 @@ const items = createReducer([], {
     const findContacts = state.find((contact) => contact.name === payload.name);
 
     if (!findContacts) {
-      return [...state, payload];
+      return [payload, ...state];
     } else {
       alert(`${payload.name} is already in contacts.`);
       return state;
